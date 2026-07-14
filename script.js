@@ -218,13 +218,9 @@ function createDrop(){
     // Random Position
     // --------------------------
 
-    const gameWidth =
-    gameContainer.offsetWidth;
-    const xPosition =
-    Math.random() *
-    (gameWidth - size);
-    drop.style.left =
-    xPosition + "px";
+    const gameWidth = gameContainer.offsetWidth;
+    const xPosition = Math.random() * (gameWidth - size);
+    drop.style.left = xPosition + "px";
 
     // --------------------------
     // Falling Speed
@@ -282,8 +278,7 @@ function createDrop(){
 // ============================================
 
 function updateScore(){
-    scoreDisplay.textContent =
-    score;
+    scoreDisplay.textContent = score;
 
     // --------------------------
     // Progress Bar
@@ -294,8 +289,7 @@ function updateScore(){
     if(percentage < 0){
         percentage = 0;
     }
-    progress.value =
-    Math.min(
+    progress.value = Math.min(
         percentage,
         100
     );
